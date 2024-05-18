@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { getMovies } from "../../movies-api";
 import { Formik, Form, Field } from "formik";
 import MovieList from "../../components/MovieList/MovieList";
-import Navigation from "../../components/Navigation/Navigation";
 
 export default function MoviesPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -30,7 +29,6 @@ export default function MoviesPage() {
   }, [queryParam]);
   return (
     <>
-      <Navigation />
       <h1>Movies Page</h1>
       <Formik
         initialValues={{ query: "" }}

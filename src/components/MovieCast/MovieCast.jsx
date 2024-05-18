@@ -22,7 +22,7 @@ export default function MovieCast() {
       }
     }
     fetchCast();
-  }, []);
+  }, [movieId]);
   return (
     <div>
       {isLoading && <b>Loading...</b>}

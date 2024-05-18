@@ -1,5 +1,4 @@
 import MovieList from "../../components/MovieList/MovieList";
-import Navigation from "../../components/Navigation/Navigation";
 import { useState, useEffect } from "react";
 import { getTrendingMovies } from "../../movies-api";
 
@@ -26,7 +25,6 @@ export default function HomePage() {
 
   return (
     <>
-      <Navigation />
       <h1>Home Page</h1>
       <MovieList movies={movies} />
       {isLoading && <b>Loading...</b>}
